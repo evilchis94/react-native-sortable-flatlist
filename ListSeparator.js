@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ColorPropType from 'ColorPropType';
 import { View, StyleSheet } from 'react-native';
 
 const propTypes = {
-    color: ColorPropType.isRequired,
-    backgroundColor: ColorPropType.isRequired,
+    color: PropTypes.string.isRequired,
+    backgroundColor: PropTypes.string.isRequired,
     paddingLeft: PropTypes.number.isRequired,
     highlighted: PropTypes.bool.isRequired,
 };
