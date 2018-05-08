@@ -1,13 +1,13 @@
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
-import { InteractionManager, FlatList, View, LayoutAnimation, StyleSheet } from 'react-native';
+import { InteractionManager, FlatList, View, LayoutAnimation, StyleSheet, ViewPropTypes } from 'react-native';
 import PropTypes from 'prop-types';
 import ListSeparator from './ListSeparator';
 import ListItem from './ListItem';
 import GhostItemOverlay from './GhostItemOverlay';
 
 const propTypes = {
-    wrapperStyle: PropTypes.style,
+    wrapperStyle: ViewPropTypes.style,
     sortable: PropTypes.bool.isRequired,
     itemHeight: PropTypes.number.isRequired,
     seperatorBackgroundColor: PropTypes.string,
